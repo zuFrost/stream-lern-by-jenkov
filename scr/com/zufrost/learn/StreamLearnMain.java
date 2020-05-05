@@ -13,6 +13,10 @@ public class StreamLearnMain {
         items.add("three");
 
         Stream<String> stream = items.stream();
-        System.out.println(stream);
+//        System.out.println(stream);
+        long count = stream
+                .map((value) -> {return value.toLowerCase(); })
+                .count();
+        System.out.println("count = " + count);
     }
 }
