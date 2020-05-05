@@ -19,9 +19,14 @@ public class StreamLearnMain {
                 .count();
         System.out.println("count = " + count);
 
-        Stream<String> stream1 = stream
-                .map((value) -> { return value.toLowerCase(); })
-                .map((value) -> { return value.toUpperCase(); })
-                .map((value) -> { return value.substring(0,3); });
+//        Stream<String> stream1 = stream
+//                .map((value) -> { return value.toLowerCase(); })
+//                .map((value) -> { return value.toUpperCase(); })
+//                .map((value) -> { return value.substring(0,3); });
+
+
+//        Stream<String> longStringsStream = stream.filter((value) -> {
+//            return value.length() >= 3;
+//        });
     }
 }
